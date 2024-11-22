@@ -1,50 +1,52 @@
-# Welcome to your Expo app 👋
+# CashX (Currency Converter)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an Currency converting project created by using expo react native SDK 52.
 
 ## Get started
 
-1. Install dependencies
+1. Clone this repo to local system
 
-   ```bash
+   ```
+   git clone <repo_link>
+   ```
+
+   **replace <repo_link> with the actual link**
+
+2. Install dependencies
+
+   ```
    npm install
    ```
 
-2. Start the app
+3. Generate Native directories
 
-   ```bash
-    npx expo start
+   ```
+    npx expo prebuild --clean
    ```
 
-In the output, you'll find options to open the app in a
+4. Make sure you have setup Android studio/Xcode, if you are using physical devices connect with USB and enael USB debugging in developer options. Then run
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```
+   //for android
+   npx expo run:android
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   //for ios
+   npx expo run:ios
+   ```
 
-## Get a fresh project
+   you can also use Expo Go sandbox, but it is not recommended because the Expo Secure Store will be cleared automatically every time we reopen the app
 
-When you're ready, run:
+   for Expo Go
 
-```bash
-npm run reset-project
-```
+   ```
+   npx expo start
+   ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+**Note: You may encounter some issue due to latest Expo SDK 52**
 
-## Learn more
+Refer [Expo Official Docs](https://docs.expo.dev/get-started/set-up-your-environment/) for setuping environment if you encounter any issue.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Screenshots
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+![s1](./assets/sample/screenshot1.jpg)
+![s2](./assets/sample/screenshot2.jpg)
